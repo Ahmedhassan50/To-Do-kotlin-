@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="60dp"
+    android:background="#E0E0E0"
+    style="?attr/bottomSheetStyle"
+    android:id="@+id/app_bottom_sheet"
+    android:visibility="invisible"
+    android:paddingVertical="10dp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pickTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_title_24"
+        app:errorIconDrawable="@null"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pickTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Title"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pickTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorIconDrawable="@null"
+        app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pickInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Time"
+            android:inputType="text"
+            android:maxLines="1"
+            android:focusable="false"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pickDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_calendar_today_24"
+        app:errorIconDrawable="@null"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Date"
+            android:inputType="text"
+            android:maxLines="1"
+            android:focusable="false"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

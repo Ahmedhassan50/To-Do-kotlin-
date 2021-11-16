@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/newTasksFragment"
+    android:title="Tasks"
+    android:icon="@drawable/ic_baseline_dehaze_24"
+ />
+    <item
+        android:id="@+id/doneTasksFragment"
+        android:title="Done"
+        android:icon="@drawable/ic_baseline_check_circle_outline_24"
+        />
+    <item
+        android:id="@+id/archiveTasksFragment"
+        android:title="Archived"
+        android:icon="@drawable/ic_baseline_archive_24"
+        />
+</menu>

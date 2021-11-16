@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/newTasksFragment">
+    <fragment
+        android:id="@+id/newTasksFragment"
+        android:name="com.example.todo.fragments.newTask.NewTasksFragment"
+        android:label="NewTasksFragment"
+        tools:layout="@layout/fragment_new"
+        />
+
+    <fragment
+        android:id="@+id/doneTasksFragment"
+        android:name="com.example.todo.fragments.DoneTasksFragment"
+        android:label="DoneTasksFragment"
+        tools:layout="@layout/fragment_done"
+        />
+
+    <fragment
+        android:id="@+id/archiveTasksFragment"
+        android:name="com.example.todo.fragments.ArchiveTasksFragment"
+        android:label="ArchiveTasksFragment"
+        tools:layout="@layout/fragment_archive"
+        />
+
+
+</navigation>
